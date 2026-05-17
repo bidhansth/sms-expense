@@ -47,7 +47,7 @@ def _parse_datetime(date_str: str, time_str: str) -> tuple[date, time]:
 
 
 def _categorize(description: str) -> str:
-    if re.fullmatch(r"\d+,[A-Za-z]+,\d+", description.strip()):
+    if re.match(r"^\d{9},", description.strip()):
         return "qr"
 
     desc_upper = description.upper()
