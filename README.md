@@ -1,4 +1,4 @@
-# SMS Expense ETL (Beginner)
+# SMS Expense ETL
 
 A small ETL that reads SMS transaction alerts from .txt or .csv files, loads raw lines into Postgres, parses expense transactions, and stores structured rows with a simple category.
 
@@ -19,7 +19,7 @@ A small ETL that reads SMS transaction alerts from .txt or .csv files, loads raw
 - run_etl.py: entry point
 
 ## Setup
-1. Create and activate a virtual environment (optional but recommended)
+1. Create and activate a virtual environment
 2. Install dependencies:
    pip install -r requirements.txt
 3. Create a .env file:
